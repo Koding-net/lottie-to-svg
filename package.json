@@ -1,0 +1,46 @@
+{
+  "name": "@kodeking/lottie-to-svg",
+  "version": "1.0.0",
+  "description": "Extract SVG frames from Lottie JSON animations in the browser — no server required",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "keywords": [
+    "lottie",
+    "svg",
+    "lottie-to-svg",
+    "animation",
+    "converter",
+    "lottiefiles",
+    "kodeking"
+  ],
+  "author": "KodeKing <hello@kodeking.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodeking/lottie-to-svg.git"
+  },
+  "homepage": "https://github.com/kodeking/lottie-to-svg#readme",
+  "bugs": { "url": "https://github.com/kodeking/lottie-to-svg/issues" },
+  "peerDependencies": {
+    "lottie-web": ">=5.0.0"
+  },
+  "devDependencies": {
+    "lottie-web": "^5.12.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "sideEffects": false
+}
