@@ -30,10 +30,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kodeking/lottie-to-svg.git"
+    "url": "https://github.com/Koding-net/lottie-to-svg.git"
   },
-  "homepage": "https://github.com/kodeking/lottie-to-svg#readme",
-  "bugs": { "url": "https://github.com/kodeking/lottie-to-svg/issues" },
+  "homepage": "https://github.com/Koding-net/lottie-to-svg#readme",
+  "bugs": { "url": "https://github.com/Koding-net/lottie-to-svg/issues" },
   "peerDependencies": {
     "lottie-web": ">=5.0.0"
   },
