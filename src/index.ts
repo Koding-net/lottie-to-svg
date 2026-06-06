@@ -1,5 +1,5 @@
 /**
- * @kodeking/lottie-to-svg
+ * @koding-net/lottie-to-svg
  *
  * Extract SVG frames from a Lottie JSON animation.
  * Runs entirely in the browser — no server required.
@@ -38,7 +38,7 @@ export interface ExtractOptions {
  *
  * @example
  * ```ts
- * import { extractSvgFrame } from '@kodeking/lottie-to-svg';
+ * import { extractSvgFrame } from '@koding-net/lottie-to-svg';
  * import fs from 'fs'; // or fetch() in the browser
  *
  * const json = JSON.parse(fs.readFileSync('animation.json', 'utf8'));

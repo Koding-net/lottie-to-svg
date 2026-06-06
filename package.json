@@ -1,5 +1,5 @@
 {
-  "name": "@kodeking/lottie-to-svg",
+  "name": "@koding-net/lottie-to-svg",
   "version": "1.0.0",
   "description": "Extract SVG frames from Lottie JSON animations in the browser — no server required",
   "main": "dist/index.cjs",
@@ -24,7 +24,7 @@
     "animation",
     "converter",
     "lottiefiles",
-    "kodeking"
+    "koding-net"
   ],
   "author": "KodeKing <hello@kodeking.dev>",
   "license": "MIT",

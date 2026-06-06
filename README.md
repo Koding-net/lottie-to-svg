@@ -1,9 +1,9 @@
-# @kodeking/lottie-to-svg
+# @koding-net/lottie-to-svg
 
 > Extract SVG frames from Lottie JSON animations — **browser only, no server required**
 
-[![npm](https://img.shields.io/npm/v/@kodeking/lottie-to-svg)](https://www.npmjs.com/package/@kodeking/lottie-to-svg)
-[![license](https://img.shields.io/npm/l/@kodeking/lottie-to-svg)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@koding-net/lottie-to-svg)](https://www.npmjs.com/package/@koding-net/lottie-to-svg)
+[![license](https://img.shields.io/npm/l/@koding-net/lottie-to-svg)](LICENSE)
 
 Powered by [lottie-web](https://github.com/airbnb/lottie-web)'s SVG renderer. Pick any frame from an animation and get back clean, transparency-preserving SVG markup. Try it live at [iconking.net/tools/lottie-to-svg](https://iconking.net/tools/lottie-to-svg).
 
@@ -12,9 +12,9 @@ Powered by [lottie-web](https://github.com/airbnb/lottie-web)'s SVG renderer. Pi
 ## Install
 
 ```bash
-npm install @kodeking/lottie-to-svg lottie-web
+npm install @koding-net/lottie-to-svg lottie-web
 # or
-pnpm add @kodeking/lottie-to-svg lottie-web
+pnpm add @koding-net/lottie-to-svg lottie-web
 ```
 
 `lottie-web` is a peer dependency — install it alongside this package.
@@ -26,7 +26,7 @@ pnpm add @kodeking/lottie-to-svg lottie-web
 ### Extract the first frame
 
 ```ts
-import { extractSvgFrame } from '@kodeking/lottie-to-svg';
+import { extractSvgFrame } from '@koding-net/lottie-to-svg';
 
 const response = await fetch('/animation.json');
 const lottieJson = await response.json();
@@ -38,7 +38,7 @@ document.body.innerHTML = svg;
 ### Extract a specific frame and download it
 
 ```ts
-import { extractSvgFrame, getFrameCount, downloadSvg } from '@kodeking/lottie-to-svg';
+import { extractSvgFrame, getFrameCount, downloadSvg } from '@koding-net/lottie-to-svg';
 
 const lottieJson = await fetch('/animation.json').then(r => r.json());
 const totalFrames = getFrameCount(lottieJson); // e.g. 60
@@ -52,7 +52,7 @@ downloadSvg(svg, 'midpoint.svg');
 
 ```tsx
 import { useState } from 'react';
-import { extractSvgFrame } from '@kodeking/lottie-to-svg';
+import { extractSvgFrame } from '@koding-net/lottie-to-svg';
 
 export default function FramePicker({ lottieJson }: { lottieJson: object }) {
   const [frame, setFrame] = useState(0);
@@ -137,9 +137,9 @@ MIT © [KodeKing](https://github.com/Koding-net)
 
 | Package | Description |
 |---|---|
-| [@kodeking/svg-to-lottie](https://github.com/Koding-net/svg-to-lottie) | Wrap an SVG as a Lottie JSON animation |
-| [@kodeking/lottie-to-dotlottie](https://github.com/Koding-net/lottie-to-dotlottie) | Convert Lottie JSON to .lottie binary format |
-| [@kodeking/lottie-to-gif](https://github.com/Koding-net/lottie-to-gif) | Render Lottie to animated GIF (Node.js) |
-| [@kodeking/lottie-to-mp4](https://github.com/Koding-net/lottie-to-mp4) | Render Lottie to MP4 video (Node.js) |
+| [@koding-net/svg-to-lottie](https://github.com/Koding-net/svg-to-lottie) | Wrap an SVG as a Lottie JSON animation |
+| [@koding-net/lottie-to-dotlottie](https://github.com/Koding-net/lottie-to-dotlottie) | Convert Lottie JSON to .lottie binary format |
+| [@koding-net/lottie-to-gif](https://github.com/Koding-net/lottie-to-gif) | Render Lottie to animated GIF (Node.js) |
+| [@koding-net/lottie-to-mp4](https://github.com/Koding-net/lottie-to-mp4) | Render Lottie to MP4 video (Node.js) |
 
 See all tools at [github.com/Koding-net/lottie-tools](https://github.com/Koding-net/lottie-tools).
